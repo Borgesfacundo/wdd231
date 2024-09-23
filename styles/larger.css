@@ -41,7 +41,6 @@
 
     section h2 {
         margin-top: 0;
-        padding: ;
     }
 
     .course-work {
@@ -54,5 +53,24 @@
 
     .courses {
         grid-column: 1/3;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        padding: .5rem 3rem;
+        width: auto;
+    }
+
+    .classes {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 1rem;
+    }
+
+    .classes a {
+        padding: 1rem;
     }
 }
