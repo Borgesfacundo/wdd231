@@ -33,3 +33,33 @@ nav a {
     color: #fff;
     text-decoration: none;
 }
+
+#myButton::before {
+    content: "\2630";
+}
+
+#myButton {
+    position: absolute;
+    font-size: 2rem;
+    background-color: rgb(43, 43, 107);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: center;
+    padding: .25rem 2vw;
+    right: 10px;
+    top: 10px;
+}
+
+#myButton.open::before {
+    content: "X";
+}
+
+nav.menuLinks {
+    display: none;
+}
+
+nav.menuLinks.open {
+    display: block;
+}
