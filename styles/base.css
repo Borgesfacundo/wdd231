@@ -1,3 +1,7 @@
+:root {
+    --main-color: rgb(43, 43, 107);
+}
+
 body {
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 400;
@@ -5,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgb(43, 43, 107);
+    background-color: var(--main-color);
     display: grid;
     grid-template-columns: 1/2;
 }
@@ -41,7 +45,7 @@ nav a {
 #myButton {
     position: absolute;
     font-size: 2rem;
-    background-color: rgb(43, 43, 107);
+    background-color: rgba(43, 43, 107, 0);
     border: none;
     color: #fff;
     cursor: pointer;
@@ -62,4 +66,72 @@ nav.menuLinks {
 
 nav.menuLinks.open {
     display: block;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: medium;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: .8rem .6rem;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: .5rem;
+    border-bottom: 1px solid #00000051;
+    padding-bottom: .4rem;
+}
+
+button {
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: .2rem 1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.classes {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    gap: .8rem;
+}
+
+.classes a {
+    padding: .5rem 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.wdd {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+a.cse {
+    background-color: rgb(194, 189, 189);
+    color: #000;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 2.5rem;
+}
+
+#lastModified {
+    color: yellow;
+    font-size: .5rem;
 }
