@@ -1,0 +1,34 @@
+body {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: rgb(43, 43, 107);
+    display: grid;
+    grid-template-columns: 1/2;
+}
+
+header div {
+    display: flex;
+    justify-content: space-around;
+}
+
+header div img {
+    padding: 1rem;
+}
+
+header h1 {
+    color: #fff;
+    align-self: center;
+    font-weight: 500;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: .5rem;
+    color: #fff;
+    text-decoration: none;
+}
