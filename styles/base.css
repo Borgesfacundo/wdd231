@@ -11,7 +11,7 @@ body {
 header {
     background-color: var(--main-color);
     display: grid;
-    grid-template-columns: 1/2;
+    grid-template-columns: 1fr;
 }
 
 header div {
@@ -23,7 +23,7 @@ header div {
 }
 
 .profile {
-    box-shadow: 0 4px 4px 0 rgb(37, 35, 35);
+    box-shadow: 2px 5px rgba(37, 35, 35, 0.359);
 }
 
 header h1 {
@@ -64,6 +64,17 @@ nav a {
 
 nav.menuLinks {
     display: none;
+    background-color: #000000;
+    font-size: 1.5rem;
+}
+
+.menuLinks .active {
+    color: rgb(7, 222, 255);
+}
+
+nav.menuLinks a:hover {
+    background-color: #c1b7b7;
+    color: #000;
 }
 
 nav.menuLinks.open {
@@ -76,7 +87,7 @@ main {
 }
 
 h2 {
-    font-size: medium;
+    font-size: 1.8rem;
     font-weight: 600;
     background-color: var(--main-color);
     color: #fff;

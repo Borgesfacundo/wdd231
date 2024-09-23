@@ -1,11 +1,58 @@
 @media only screen and (min-width: 550px) {
-    header {
-        display: flex;
+    header div {
         justify-content: center;
     }
 
     h1 {
         font-size: 4rem;
     }
-    
+
+    #myButton {
+        display: none;
+    }
+
+    nav.menuLinks {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        width: 100%;
+        flex: 1 1 100%;
+
+    }
+
+    nav.menuLinks a {
+        display: block;
+        padding: 1rem;
+        flex-grow: 1;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    section {
+        border: 1px solid #000;
+        border-radius: 8px;
+        box-shadow: 1px 1px 10px #0000009a;
+    }
+
+    section h2 {
+        margin-top: 0;
+        padding: ;
+    }
+
+    .course-work {
+        padding-top: 0;
+    }
+
+    .course-work ul {
+        font-size: 1.5rem;
+    }
+
+    .courses {
+        grid-column: 1/3;
+    }
 }
