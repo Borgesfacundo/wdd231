@@ -1,0 +1,33 @@
+{
+    "family_name": "Borges",
+    "move_in_date": "2024-05-16",
+    "number_of_people": 5,
+    "visted_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Facundo",
+            "gender": "Male",
+            "birthdate": "1999-07-26"
+        },
+        {
+            "name": "Sergio",
+            "gender": "Male",
+            "birthdate": "1971-06-06"
+        },
+        {
+            "name": "Irma",
+            "gender": "Female",
+            "birthdate": "1961-06-25"
+        },
+        {
+            "name": "Karina",
+            "gender": "Female",
+            "birthdate": "1993-09-09"
+        },
+        {
+            "name": "Noelia",
+            "gender": "Female",
+            "birthdate": "1994-01-13"
+        }
+    ]
+}
