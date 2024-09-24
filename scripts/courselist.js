@@ -113,6 +113,15 @@ document.querySelector(".buttons button:nth-child(3)").addEventListener("click",
 
 //Adding total of credits
 const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
-
 const btnAll = document.querySelector(".buttons button:nth-child(1)");
+btnAll.textContent += ` (${totalCredits}) Credits`;
+
+const totalCreditsCSE = (courses.filter(course => course.subject === "CSE")).reduce((total, course) => total + course.credits, 0);
+const btnCSE = document.querySelector(".buttons button:nth-child(2)");
+btnCSE.textContent += ` (${totalCreditsCSE}) Credits`;
+
+const totalCreditswdd = (courses.filter(course => course.subject === "WDD")).reduce((total, course) => total + course.credits, 0);
+const btnWDD = document.querySelector(".buttons button:nth-child(3)");
+btnWDD.textContent += ` (${totalCreditsCSE}) Credits`;
+
 
