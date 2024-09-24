@@ -127,12 +127,12 @@ button {
     border-radius: 5px;
 }
 
-a.wdd {
+a.completed {
     background-color: var(--main-color);
     color: #fff;
 }
 
-a.cse {
+a.uncompleted {
     background-color: rgb(194, 189, 189);
     color: #000;
 }

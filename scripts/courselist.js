@@ -77,3 +77,42 @@ const courses = [
         completed: false
     }
 ]
+
+
+//displaying courses
+const container = document.querySelector(".classes");
+
+function displayCourses(filteredCourses) {
+    container.innerHTML = "";
+
+    filteredCourses.forEach(course => {
+        const a = document.createElement("a");
+        a.innerHTML = `${course.subject} ${course.number}`;
+        if (course.completed == true) {
+            a.classList.add("completed");
+        } else {
+            a.classList.add("uncompleted");
+        }
+
+        container.appendChild(a);
+    });
+}
+
+displayCourses(courses);
+
+//filtering courses
+document.querySelector(".buttons button:nth-child(1)").addEventListener("click", () => displayCourses(courses));
+document.querySelector(".buttons button:nth-child(2)").addEventListener("click", () => {
+    const filteredCSE = courses.filter(course => course.subject === "CSE");
+    displayCourses(filteredCSE);
+});
+document.querySelector(".buttons button:nth-child(3)").addEventListener("click", () => {
+    const filteredWDD = courses.filter(course => course.subject === "WDD");
+    displayCourses(filteredWDD);
+});
+
+//Adding total of credits
+const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
+
+const btnAll = document.querySelector(".buttons button:nth-child(1)");
+
