@@ -9,7 +9,6 @@ h1 {
 #cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: .8rem;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
@@ -24,6 +23,7 @@ section {
     background-color: #eee;
     border: 1px solid #bbb;
     width: 250px;
+    box-sizing: border-box;
 }
 
 img {
@@ -31,4 +31,8 @@ img {
     border: 1px solid #333;
     width: 150px;
     height: auto;
+}
+
+footer {
+    text-align: center;
 }
