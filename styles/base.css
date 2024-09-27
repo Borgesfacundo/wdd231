@@ -32,14 +32,6 @@ header h1 {
     font-weight: 500;
 }
 
-nav a {
-    display: block;
-    text-align: center;
-    padding: .5rem;
-    color: #fff;
-    text-decoration: none;
-}
-
 #myButton::before {
     content: "\2630";
 }
@@ -62,23 +54,48 @@ nav a {
     content: "X";
 }
 
-nav.menuLinks {
-    display: none;
-    background-color: #000000;
-    font-size: 1.5rem;
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
 }
 
-.menuLinks .active {
+nav a {
+    display: block;
+    padding: .5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    overflow: hidden;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+ul.menuLinks li a {
+    padding: .75rem 2vw;
+    text-decoration: none;
+}
+
+ul.menuLinks .active {
     color: rgb(7, 222, 255);
 }
 
-nav.menuLinks a:hover {
-    background-color: #c1b7b7;
-    color: #000;
+ul.menuLinks {
+    list-style-type: none;
+    background-color: #000000;
+    font-size: 1.5rem;
+    margin: 0;
 }
 
-nav.menuLinks.open {
-    display: block;
+ul.menuLinks a:hover {
+    background-color: #c1b7b7;
+    color: #000;
 }
 
 main {

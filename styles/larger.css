@@ -11,19 +11,28 @@
         display: none;
     }
 
-    nav.menuLinks {
-        display: flex;
-        justify-content: space-around;
-        margin: 0 auto;
-        width: 100%;
-        flex: 1 1 100%;
-
+    nav {
+        grid-template-rows: 1fr;
     }
 
-    nav.menuLinks a {
+    ul.menuLinks {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav a {
         display: block;
         padding: 1rem;
-        flex-grow: 1;
+
     }
 
     main {
