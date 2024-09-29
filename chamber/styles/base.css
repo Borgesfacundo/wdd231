@@ -25,6 +25,7 @@ p {
 header {
     background-color: var(--main-color);
     text-align: center;
+    min-width: 350px;
 }
 
 .logo-img {
@@ -113,6 +114,7 @@ footer {
     grid-template-columns: 1fr;
     padding: 1rem;
     gap: 1rem;
+    min-width: 350px;
 }
 
 footer p {
