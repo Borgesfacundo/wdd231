@@ -5,7 +5,7 @@
             "address": "Av. Agustin Alvarez 547",
             "phoneNumber": "+54 2317 123546",
             "website": "www.transporteguillan.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/Guillan%20Transport.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/Guillan%20Transport.webp",
             "membership": "Bronze",
             "slogan": "We can bring it for you",
             "email": "transguillan@transport.com"
@@ -15,7 +15,7 @@
             "address": "av. 25 de Mayo 1458",
             "phoneNumber": "+54 2317 487965",
             "website": "www.juanpetstore.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/Juan%20Pet%20Store.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/Juan%20Pet%20Store.webp",
             "membership": "Silver",
             "slogan": "We make your pet happy",
             "email": "juanpetshop@petshops.com"
@@ -25,7 +25,7 @@
             "address": "Mitre 2574",
             "phoneNumber": "+54 2317 747456",
             "website": "www.mangerycar.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/Mangery%20Car.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/Mangery%20Car.webp",
             "membership": "Gold",
             "slogan": "We can fix your car",
             "email": "mangeryfix@gmail.com"
@@ -35,7 +35,7 @@
             "address": "Av Pironio 1234",
             "phoneNumber": "+54 2317 789875",
             "website": "www.caag.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/CAAG.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/CAAG.webp",
             "membership": "Gold",
             "slogan": "We form champions",
             "email": "casgustingonzales@soccer.com"
@@ -45,7 +45,7 @@
             "address": "Av Compaire 1487",
             "phoneNumber": "+54 2317 412357",
             "website": "www.casg.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/San%20Goku.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/San%20Goku.webp",
             "membership": "Silver",
             "slogan": "Helping to the next generations",
             "email": "cagokusan@soccer.com"
@@ -55,7 +55,7 @@
             "address": "Cabrerizo 3547",
             "phoneNumber": "+54 2317 523545",
             "website": "www.depshoesarmando.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/Armando%20Deps%20Shoes.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/Armando%20Deps%20Shoes.webp",
             "membership": "Gold",
             "slogan": "The best choice for your feet",
             "email": "armandoshoes@shoes.com"
@@ -65,7 +65,7 @@
             "address": "San Martin 537",
             "phoneNumber": "+54 2317 456928",
             "website": "www.pizzaworld9dj.com",
-            "image": "https://borgesfacundo.github.io/wdd230/chamber/images/Pizza%20Wolrd.png",
+            "image": "https://raw.githubusercontent.com/Borgesfacundo/wdd231/refs/heads/main/chamber/images/Pizza%20Wolrd.webp",
             "membership": "Bronze",
             "slogan": "Best pizzas in town!",
             "email": "pizzaworld@pizzaworld.com"
