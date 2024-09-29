@@ -25,7 +25,6 @@ p {
 header {
     background-color: var(--main-color);
     text-align: center;
-    min-width: 350px;
 }
 
 .logo-img {
