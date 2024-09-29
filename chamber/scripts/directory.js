@@ -28,7 +28,6 @@ const displayCompanies = (members) => {
         icon.setAttribute("alt", member.name);
         icon.setAttribute("width", "150");
         icon.setAttribute("height", "150");
-        icon.setAttribute("loading", "lazy");
 
         //Set Information
         info.innerHTML = `${member.slogan} - <br> ${member.address}`;
