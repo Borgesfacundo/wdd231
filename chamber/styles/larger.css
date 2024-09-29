@@ -42,4 +42,46 @@
         align-items: center;
     }
 
+    /* Directory Page */
+    .list-directory {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list-directory section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+        height: 100px;
+        align-items: center;
+    }
+
+    .list-directory section>* {
+        margin: 0 1rem;
+    }
+
+    .list-directory section img {
+        display: none;
+    }
+
+    .list-directory section h2 {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .list-directory section h4 {
+        font-size: 0.7rem;
+    }
+
+    .list-directory section a {
+        font-size: 0.7rem;
+        align-self: center;
+
+    }
+
+    .list-directory section:nth-child(even) {
+        background-color: #dadddf;
+    }
+
 }
