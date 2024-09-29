@@ -138,6 +138,10 @@ footer p {
     background-color: #fff;
 }
 
+article h2 {
+    text-align: center;
+}
+
 .menu-directory {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
