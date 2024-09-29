@@ -1,5 +1,5 @@
 :root {
-    --main-color: #e6eff1;
+    --main-color: #ecf3f4;
     --dark-blue: #062160;
     --text-color: #6691F5;
     --blue--button: #3FDBF3;
@@ -94,7 +94,7 @@ ul.menuLinks li a {
 }
 
 ul.menuLinks .active {
-    color: var(--text-color);
+    color: #0032a8;
 }
 
 ul.menuLinks {
