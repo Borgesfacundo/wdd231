@@ -1,4 +1,4 @@
-const linkURL = "https://borgesfacundo.github.io/wdd230/chamber/data/members.json";
+const linkURL = "https://borgesfacundo.github.io/wdd231/chamber/data/members.json";
 const article = document.querySelector("article");
 
 async function getMembers() {
