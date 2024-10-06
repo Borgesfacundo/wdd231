@@ -6,7 +6,9 @@ async function getMembers() {
     const data = await response.json();
     const goldSilverMembers = data.companies.filter(member => member.membership === "Gold" || member.membership === "Silver");
     const shuffledMembers = shuffle(goldSilverMembers);
-    displaySpotlights(shuffledMembers.slice(0, 3));
+    const randomCount = Math.floor(Math.random() * 2) + 2;
+
+    displaySpotlights(shuffledMembers.slice(0, randomCount));
 }
 
 const displaySpotlights = (members) => {
