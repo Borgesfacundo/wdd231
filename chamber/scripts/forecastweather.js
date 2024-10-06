@@ -3,15 +3,19 @@ const todayTemp = document.querySelector(".today");
 const tomorrowTemp = document.querySelector(".tomorrow");
 const afterTomorrowTemp = document.querySelector(".after-tomorrow");
 
+const dayweek = new Date();
+let day = dayweek.getDay();
+const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-async function apiFetch() {
+
+async function apiFetch2() {
 
     try {
         const response = await fetch(forecastURL);
         if (response.ok) {
-            const data = await response.json();
-            console.log(data);
-            displayResults(data);
+            const data2 = await response.json();
+            //console.log(data2);
+            displayResults2(data2);
         } else {
             throw Error(await response.text());
         }
@@ -20,10 +24,10 @@ async function apiFetch() {
     }
 }
 
-function displayResults(data) {
-    todayTemp.innerHTML = `Today: ${data.list[3].main.temp}&deg; C`
-    tomorrowTemp.innerHTML = `Tomorrow: ${data.list[11].main.temp}&deg; C`
-    afterTomorrowTemp.innerHTML = `After Tomorrow: ${data.list[19].main.temp}&deg; C`
+function displayResults2(data) {
+    todayTemp.innerHTML = `${weekday[day]}: ${data.list[3].main.temp}&deg; C`
+    tomorrowTemp.innerHTML = `${weekday[day + 1]}: ${data.list[11].main.temp}&deg; C`
+    afterTomorrowTemp.innerHTML = `${weekday[day + 2]}: ${data.list[19].main.temp}&deg; C`
 }
 
-apiFetch()
+apiFetch2()
