@@ -10,6 +10,7 @@ async function getMembers() {
 }
 
 const displaySpotlights = (members) => {
+    section.innerHTML = "";
     members.forEach(member => {
         const div = document.createElement("div");
         const title = document.createElement("h3");
