@@ -239,13 +239,6 @@ article h2 {
     max-width: 100%;
 }
 
-.forecast-weather {
-    font-size: .8rem;
-    text-align: left;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-}
-
 /* Home Page Styling */
 
 .home-page {
@@ -253,12 +246,17 @@ article h2 {
     grid-template-columns: 1fr;
 }
 
+
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+}
 
+.hero h2 {
+    text-align: center;
+    grid-column: 1/5;
 }
 
 .hero div {
@@ -285,4 +283,20 @@ article h2 {
     text-decoration: none;
     color: #000;
     padding: 1rem 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+section h2 {
+    padding: 1rem;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+.weather,
+.forecast-weather {
+    text-align: center;
 }
