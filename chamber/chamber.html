@@ -26,6 +26,8 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <script src="scripts/scripts.js" defer></script>
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecastweather.js" defer></script>
 </head>
 
 <body>
@@ -52,17 +54,38 @@
     </header>
     <main id="home-page">
         <section class="hero">
-            <img src="images/hero-img.webp" alt="9 de Julio Lake" loading="lazy" width="1920" height="1080">
+            <h2>Welcome Visitors!</h2>
+            <div>
+                <img src="images/hero-img.webp" alt="9 de Julio Lake" loading="lazy" width="1920" height="1080">
+            </div>
             <div class="join">
-                <a href="·">Join Our Family</a>
+                <a href="#">Join Our Family</a>
             </div>
         </section>
 
         <section class="events">
+            <h2>Events</h2>
 
         </section>
 
-        <section class="weather"></section>
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <img id="weather-icon" src="" alt="">
+            <p><span class="temp"></span></p>
+            <p class="weather-desc"></p>
+            <p class="weather-high"></p>
+            <p class="weather-low"></p>
+            <p class="weather-humidity"></p>
+
+
+        </section>
+
+        <section class="forecast-weather">
+            <h2>Forecast Weather</h2>
+            <p class="today"></p>
+            <p class="tomorrow"></p>
+            <p class="after-tomorrow"></p>
+        </section>
 
         <section class="ads"></section>
     </main>

@@ -2,7 +2,7 @@
     --main-color: #ecf3f4;
     --dark-blue: #062160;
     --text-color: #6691F5;
-    --blue--button: #3FDBF3;
+    --blue--button: #3fdbf3c0;
 }
 
 body {
@@ -244,4 +244,45 @@ article h2 {
     text-align: left;
     margin-top: 1rem;
     padding-bottom: 1rem;
+}
+
+/* Home Page Styling */
+
+.home-page {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero div {
+    width: 100%;
+    grid-column: 1/5;
+    grid-row: 2/4;
+
+}
+
+.hero .join {
+    grid-column: 3/5;
+    grid-row: 3/5;
+    text-align: center;
+    background-color: var(--blue--button);
+}
+
+.hero div img {
+    width: 100%;
+    height: auto;
+}
+
+.join a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 0;
 }
