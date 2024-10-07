@@ -241,15 +241,17 @@ article h2 {
 
 /* Home Page Styling */
 
-.home-page {
+#home-page {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
 }
-
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -263,7 +265,6 @@ article h2 {
     width: 100%;
     grid-column: 1/5;
     grid-row: 2/4;
-
 }
 
 .hero .join {
@@ -285,18 +286,33 @@ article h2 {
     padding: 1rem 0;
 }
 
-section {
-    padding: 2rem;
-}
-
 section h2 {
     padding: 1rem;
     background-color: var(--main-color);
     text-align: center;
     color: var(--dark-blue);
+    margin-top: 0;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
 }
 
 .weather,
-.forecast-weather {
+.forecast-weather,
+.events {
+    text-align: center;
+    background-color: #cfd3d6;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+
+.ads {
+    display: grid;
+    gap: 2rem;
+}
+
+.ads div {
+    padding: 1rem;
+    border-radius: 9px;
+    background-color: #cfd3d6;
     text-align: center;
 }
