@@ -311,8 +311,20 @@ section h2 {
 }
 
 .ads div {
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 9px;
     background-color: #cfd3d6;
     text-align: center;
+}
+
+.ads h3 {
+    font-size: 1.5rem;
+}
+
+.ads div a {
+    border-radius: 10px;
+    background-color: var(--blue--button);
+    color: var(--dark-blue);
+    padding: 0.5rem 1rem;
+    text-decoration: none;
 }
