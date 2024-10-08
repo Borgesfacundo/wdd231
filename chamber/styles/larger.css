@@ -89,4 +89,33 @@
     .list-directory section:nth-child(even) {
         background-color: #dadddf;
     }
+
+    /* Chamber Home Page */
+
+    #home-page .hero h2 {
+        grid-column: 2/4;
+    }
+
+    .hero .join {
+        width: 50%;
+        padding: 0 1rem;
+    }
+
+    #home-page {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .hero {
+        grid-column: 1/5;
+    }
+
+    .events {
+        grid-column: 1/3;
+    }
+
+    .ads {
+        grid-column: 1/5;
+        flex-direction: row;
+    }
+
 }

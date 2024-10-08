@@ -14,6 +14,7 @@ const displayCompanies = (members) => {
         //Create Elements
         let card = document.createElement("section");
         let name = document.createElement("h2");
+        let image = document.createElement("img");
         let icon = document.createElement("img");
         let info = document.createElement("h4");
         let phone = document.createElement("h4");

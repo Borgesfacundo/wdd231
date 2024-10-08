@@ -14,12 +14,19 @@ async function getMembers() {
 const displaySpotlights = (members) => {
     section.innerHTML = "";
     members.forEach(member => {
-        const div = document.createElement("div");
-        const title = document.createElement("h3");
-        const slogan = document.createElement("p");
-        const email = document.createElement("p");
-        const phone = document.createElement("p");
-        const link = document.createElement("a");
+
+        let div = document.createElement("div");
+        let title = document.createElement("h3");
+        let slogan = document.createElement("p");
+        let email = document.createElement("p");
+        let phone = document.createElement("p");
+        let link = document.createElement("a");
+        let image = document.createElement("img");
+        image.setAttribute("src", member.image)
+        image.setAttribute("alt", member.name)
+        image.setAttribute("width", "100")
+        image.setAttribute("height", "100")
+
 
         title.innerHTML = member.name;
         slogan.innerHTML = `"${member.slogan}"`;
@@ -30,6 +37,7 @@ const displaySpotlights = (members) => {
 
         div.appendChild(title);
         div.appendChild(slogan);
+        div.appendChild(image);
         div.appendChild(email);
         div.appendChild(phone);
         div.appendChild(link);

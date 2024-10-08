@@ -272,6 +272,8 @@ article h2 {
     grid-row: 3/5;
     text-align: center;
     background-color: var(--blue--button);
+    border-radius: 9px;
+    margin: 0 auto;
 }
 
 .hero div img {
@@ -296,6 +298,10 @@ section h2 {
     border-top-right-radius: 9px;
 }
 
+section .welcome {
+    border-radius: 9px;
+}
+
 .weather,
 .forecast-weather,
 .events {
@@ -311,7 +317,9 @@ section h2 {
 }
 
 .ads div {
-    padding: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 2rem;
     border-radius: 9px;
     background-color: #cfd3d6;
     text-align: center;
@@ -319,6 +327,31 @@ section h2 {
 
 .ads h3 {
     font-size: 1.5rem;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.ads div img {
+    grid-column: 1/2;
+    grid-row: 3/6;
+}
+
+.ads div p:first-of-type {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: -1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid #000;
+}
+
+.ads div p:nth-of-type(2) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.ads div p:nth-of-type(3) {
+    grid-column: 2/3;
+    grid-row: 4/5;
 }
 
 .ads div a {
