@@ -93,8 +93,13 @@ function displayCourses(filteredCourses) {
         } else {
             a.classList.add("uncompleted");
         }
-
         container.appendChild(a);
+        //adding dialog
+        a.addEventListener("click", () => {
+            displayCourseDetails(course);
+        })
+
+
     });
 }
 
@@ -127,6 +132,8 @@ btnWDD.textContent += ` (${totalCreditsCSE}) Credits`;
 
 // Adding courseDetails
 
+
+
 const courseDetails = document.querySelector("#course-details");
 
 function displayCourseDetails(course) {
@@ -146,7 +153,4 @@ function displayCourseDetails(course) {
     });
 }
 
-container.addEventListener("click", () => {
-    displayCourseDetails(course);
-})
 
