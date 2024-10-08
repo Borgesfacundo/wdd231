@@ -115,7 +115,14 @@
 
     .ads {
         grid-column: 1/5;
-        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .ads div a,
+    .ads div p:nth-of-type(2),
+    .ads div p:nth-of-type(3) {
+        justify-self: left;
+    }
+
 
 }

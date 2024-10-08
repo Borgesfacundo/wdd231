@@ -319,10 +319,12 @@ section .welcome {
 .ads div {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem 2rem;
+    gap: .5rem;
+    padding: 2rem 1rem;
     border-radius: 9px;
     background-color: #cfd3d6;
     text-align: center;
+    justify-content: center;
 }
 
 .ads h3 {
@@ -334,6 +336,7 @@ section .welcome {
 .ads div img {
     grid-column: 1/2;
     grid-row: 3/6;
+    justify-self: center;
 }
 
 .ads div p:first-of-type {
