@@ -361,6 +361,8 @@ section .welcome {
     border-radius: 10px;
     background-color: var(--blue--button);
     color: var(--dark-blue);
-    padding: 0.5rem 1rem;
+    padding: 1rem;
+    max-width: 7rem;
     text-decoration: none;
+    justify-self: center;
 }
