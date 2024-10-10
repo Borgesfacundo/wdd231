@@ -49,7 +49,14 @@
             </ul>
         </nav>
     </header>
-    <main id="join">
+    <main id="join-page">
+        <form method="get">
+            <fieldset>
+                <label>First Name<input type="text" name="name" title="firstname" autocomplete="given-name" requiered></label>
+                <label>Last Name<input type="text" name="last" title="lastname" autocomplete="family-name" requiered></label>
+                <label>organizational Title<input type="text" name="title" title="orgtitle" autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <div>
