@@ -26,7 +26,6 @@ async function getMembershipLevel() {
 
 function displayMembershipDetails(membership, className) {
     membership.memberships.forEach((lvl) => {
-        console.log(lvl)
         if (lvl.class === className) {
             modal.innerHTML = "";
             modal.innerHTML = `
