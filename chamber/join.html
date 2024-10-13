@@ -51,33 +51,35 @@
         </nav>
     </header>
     <main id="join-page">
-        <form method="get">
-            <h2>Membership Application</h2>
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label>First Name* <input type="text" name="name" title="firstname" autocomplete="given-name"
-                        required></label>
-                <label>Last Name* <input type="text" name="last" title="lastname" autocomplete="family-name"
-                        required></label>
-                <label>organizational Title <input type="text" name="title" title="orgtitle"
-                        autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
-                <label>Email* <input type="email" name="email" title="useremail" autocomplete="email"
-                        placeholder="youremail@gmail.com" required></label>
-                <label>Phone Number* <input type="telephone" name="telephone" title="phone"
-                        autocomplete="tel-country-code" required></label>
-                <label>Business/Organization's Name* <input type="text" name="business" title="businessname"
-                        autocomplete="organization" required></label>
-                <div>Membership level</div>
-                <label><input type="radio" name="membership" value="np">NP Membership</label>
-                <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
-                <label><input type="radio" name="membership" value="silver">Silver Membership</label>
-                <label><input type="radio" name="membership" value="gold">Gold Membership</label>
-                <label>Business/Organization's description <textarea id="description" title="description"
-                        name="description"></textarea></label>
-                <label><input type="hidden" name="timestamp" id="timestamp"></label>
-            </fieldset>
-            <input type="submit" value="Join Us">
-        </form>
+        <div class="form-container">
+            <form method="get">
+                <h2>Membership Application</h2>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label>First Name* <input type="text" name="name" title="firstname" autocomplete="given-name"
+                            required></label>
+                    <label>Last Name* <input type="text" name="last" title="lastname" autocomplete="family-name"
+                            required></label>
+                    <label>organizational Title <input type="text" name="title" title="orgtitle"
+                            autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$"></label>
+                    <label>Email* <input type="email" name="email" title="useremail" autocomplete="email"
+                            placeholder="youremail@gmail.com" required></label>
+                    <label>Phone Number* <input type="telephone" name="telephone" title="phone"
+                            autocomplete="tel-country-code" required></label>
+                    <label>Business/Organization's Name* <input type="text" name="business" title="businessname"
+                            autocomplete="organization" required></label>
+                    <div>Membership level</div>
+                    <label><input type="radio" name="membership" value="np">NP Membership</label>
+                    <label><input type="radio" name="membership" value="bronze">Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver">Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold">Gold Membership</label>
+                    <label>Business/Organization's description <textarea id="description" title="description"
+                            name="description"></textarea></label>
+                    <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                </fieldset>
+                <input type="submit" value="Join Us">
+            </form>
+        </div>
         <dialog id="membership-details" class="modal">
         </dialog>
         <div class="membership-lvl">
