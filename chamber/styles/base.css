@@ -407,7 +407,7 @@ div {
 
 input[type="text"],
 input[type="email"],
-input[type="telephone"] {
+input[type="phone"] {
     display: block;
     color: #000;
     border: 1px solid #000;
