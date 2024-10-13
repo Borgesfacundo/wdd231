@@ -527,6 +527,11 @@ dialog button {
     animation: rainbow4 1.5s ease forwards;
 }
 
+/*Thank you */
+.userinfo {
+    text-align: center;
+}
+
 
 @keyframes rainbow {
     from {
