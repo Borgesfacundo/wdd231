@@ -18,3 +18,20 @@ const lastmodifElement = document.querySelector("#lastmodified");
 let oLastModified = document.lastModified;
 
 lastmodifElement.innerHTML = `Last Update: ${oLastModified}`;
+
+// Timestamp
+function setCurrentDateTime() {
+    var now = new Date();
+    var dateTimeString = now.toISOString();
+    document.getElementById("timestamp").value = dateTimeString;
+}
+
+// Get the element with ID "timestamp"
+var timestampElement = document.getElementById("timestamp");
+
+// Call function when page is loaded
+if (timestampElement !== null) {
+    setCurrentDateTime();
+} else {
+    console.log("no Timestamp element");
+}

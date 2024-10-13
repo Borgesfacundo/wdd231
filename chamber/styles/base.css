@@ -107,7 +107,7 @@ ul.menuLinks a:hover {
     border-bottom: 3px solid var(--blue--button);
 }
 
-main {
+main h2 {
     text-align: center;
 }
 
