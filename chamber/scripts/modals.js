@@ -22,7 +22,7 @@ async function getMembershipLevel() {
 };
 
 function displayMembershipDetails(membership, className) {
-    membership.forEach(lvl => {
+    membership.forEach((lvl) => {
         if (lvl.class === className) {
             membershipDetails.innerHTML = "";
             membershipDetails.innerHTML = `
