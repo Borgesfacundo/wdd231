@@ -1,3 +1,9 @@
+const modal = document.querySelector(".membership-details");
+const openModalNP = document.querySelector(".np");
+const openModalBronze = document.querySelector(".bronze");
+const openModalSilver = document.querySelector(".silver");
+const openModalGold = document.querySelector(".gold");
+
 function displayMembershipDetails(membership) {
     membershipDetails.innerHTML = "";
     membershipDetails.innerHTML = `
@@ -8,3 +14,4 @@ function displayMembershipDetails(membership) {
     `;
 
 }
+
