@@ -3,7 +3,6 @@ const currentURL = window.location.href;
 const everything = currentURL.split("?");
 
 let formData = everything[1].split("&");
-console.log(formData);
 
 function show(cup) {
     formData.forEach((element) => {
