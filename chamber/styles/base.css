@@ -107,6 +107,10 @@ ul.menuLinks a:hover {
     border-bottom: 3px solid var(--blue--button);
 }
 
+main {
+    text-align: center;
+}
+
 footer {
     background-color: var(--main-color);
     display: grid;
