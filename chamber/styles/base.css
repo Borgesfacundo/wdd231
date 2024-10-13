@@ -409,7 +409,6 @@ input[type="text"],
 input[type="email"],
 input[type="telephone"] {
     display: block;
-    background-color: var(#fff);
     color: #000;
     border: 1px solid #000;
     border-radius: 7px;
