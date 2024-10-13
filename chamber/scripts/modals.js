@@ -1,4 +1,4 @@
-const modal = document.querySelector(".membership-details");
+const modal = document.querySelector("#membership-details");
 const openModalNP = document.querySelector(".np");
 const openModalBronze = document.querySelector(".bronze");
 const openModalSilver = document.querySelector(".silver");
@@ -10,37 +10,39 @@ async function getMembershipLevel() {
     const response = await fetch(linkURL);
     const data = await response.json();
 
-    openModalNP.addEventListener("click",
-        displayMembershipDetails(data, openModalNP.classList));
-    openModalBronze.addEventListener("click",
-        displayMembershipDetails(data, openModalBronze.classList));
-    openModalSilver.addEventListener("click",
-        displayMembershipDetails(data, openModalSilver.classList));
-    openModalGold.addEventListener("click",
-        displayMembershipDetails(data, openModalGold.classList));
-
+    openModalNP.addEventListener("click", () => {
+        displayMembershipDetails(data, "np");
+    });
+    openModalBronze.addEventListener("click", () => {
+        displayMembershipDetails(data, "bronze");
+    });
+    openModalSilver.addEventListener("click", () => {
+        displayMembershipDetails(data, "silver");
+    });;
+    openModalGold.addEventListener("click", () => {
+        displayMembershipDetails(data, "gold");
+    });
 };
 
 function displayMembershipDetails(membership, className) {
-    membership.forEach((lvl) => {
+    membership.memberships.forEach((lvl) => {
+        console.log(lvl)
         if (lvl.class === className) {
-            membershipDetails.innerHTML = "";
-            membershipDetails.innerHTML = `
+            modal.innerHTML = "";
+            modal.innerHTML = `
             <button id="closeModal">❌</button>
-            <h2>${membership.title}
-            <p>${membership.description}</p>
-            <p>Cost: ${membership.cost}</p>
+            <h2>${lvl.title}</h2>
+            <p>${lvl.description}</p>
+            <p>Cost: ${lvl.cost}</p>
             `;
             modal.showModal();
-
+            const closeModal = document.querySelector("#closeModal");
             closeModal.addEventListener("click", () => {
-                membershipDetails.close();
+                modal.close();
             });
-        } else {
-
         }
-
     });
-
 }
+
+getMembershipLevel()
 

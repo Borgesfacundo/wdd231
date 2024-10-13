@@ -4,7 +4,7 @@
             "class": "np",
             "title": "NP Membership Level",
             "description": "This is for non profit organizations and the is no fee. It includes the following benefits: every 6 months you will have an special event focused on your organization, you will have access to 10 trainning sessions per month and 15% discount in special events.",
-            "price": "Free"
+            "price": "$00"
         },
         {
             "class": "bronze",
