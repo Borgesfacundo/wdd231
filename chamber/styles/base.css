@@ -413,6 +413,7 @@ input[type="telephone"] {
     max-width: 400px;
     width: 100%;
     font-size: 1.2rem;
+    box-sizing: border-box;
 }
 
 textarea {
