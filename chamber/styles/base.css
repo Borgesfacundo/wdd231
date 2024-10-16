@@ -168,6 +168,10 @@ article h2 {
     margin-right: 0;
 }
 
+.grid-directory section h2 {
+    background-color: #cfd3d6;
+}
+
 .grid-directory {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -194,6 +198,10 @@ article h2 {
     padding: 0.25rem;
     box-sizing: border-box;
     justify-items: left;
+}
+
+.list-directory section h2 {
+    background-color: #cfd3d600;
 }
 
 .list-directory section>* {
