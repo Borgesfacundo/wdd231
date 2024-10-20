@@ -148,7 +148,15 @@
     }
 
     .photo-card img {
-        width: 80%;
+        width: 70%;
+        transition: 1s ease;
+    }
+
+    .photo-card img:hover {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 2s ease;
     }
 
 }
