@@ -540,6 +540,50 @@ dialog button {
 }
 
 
+/* Discover Page */
+.discover-main {
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.discover-main-section {
+    border: 1px solid grey;
+    border-radius: 9px;
+}
+
+.side-h2 {
+    background-color: #fff;
+    font-size: 2rem;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+}
+
+.sidebar-container .sidebar {
+    border: 1px solid grey;
+    border-radius: 9px;
+    margin: 1rem;
+}
+
+.discover-main section div p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.photo-card {
+    text-align: center;
+}
+
+.photo-card img {
+    width: 80%;
+    height: auto;
+    border: 1px solid grey;
+    border-radius: 9px;
+
+}
+
 @keyframes rainbow {
     from {
         background-color: #91bdda;

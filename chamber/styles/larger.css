@@ -142,4 +142,13 @@
         grid-column: 2/3;
     }
 
+    /* Discover page */
+    .discover-main {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .photo-card img {
+        width: 80%;
+    }
+
 }
