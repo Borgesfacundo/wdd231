@@ -81,5 +81,10 @@ main {
 
 footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 33vw);
+}
+
+footer div {
+    text-align: center;
+    align-content: center;
 }
