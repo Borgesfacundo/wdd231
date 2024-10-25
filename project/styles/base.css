@@ -13,11 +13,16 @@ header {
     display: grid;
 }
 
-h1 {
+header div {
     text-align: center;
 }
 
-header img {
+h1 {
+    text-align: center;
+    min-width: 250px;
+}
+
+header div img {
     margin: 2rem auto;
 }
 
@@ -53,6 +58,7 @@ nav ul {
     overflow: hidden;
     padding: 0;
     margin-bottom: 2px;
+    list-style: none;
 }
 
 nav ul li a {
@@ -61,6 +67,8 @@ nav ul li a {
     text-decoration: none;
     text-align: center;
     color: var(--white);
+    border-radius: 6px;
+
 }
 
 .active {
