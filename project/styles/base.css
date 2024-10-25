@@ -1,0 +1,85 @@
+:root {
+    --background: #EC1C24;
+    --white: #FFF;
+    --black: #000;
+}
+
+body {
+    color: #fff;
+    background-image: linear-gradient(3.5deg, rgba(190, 47, 49, 1) 105.3%, #bbb 187.7%);
+}
+
+header {
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+}
+
+header img {
+    margin: 2rem auto;
+}
+
+.hamb-menu::before {
+    content: "\2630";
+}
+
+.hamb-menu {
+    position: absolute;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+    color: var(--white);
+    cursor: pointer;
+    text-align: center;
+    padding: .25rem 2vw;
+    right: 10px;
+    top: 10px;
+    width: 44px;
+}
+
+.hamb-menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+    overflow: hidden;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+nav ul li a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    text-align: center;
+    color: var(--white);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.414);
+}
+
+nav ul li a:hover {
+    background-color: var(--black);
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+}
+
+main {
+    border-top: 2px solid #00000023;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
