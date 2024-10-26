@@ -31,6 +31,7 @@ function Next() {
 function Prev() {
     let sliderSection = document.querySelectorAll(".slider__section");
     let sliderSectionLast = sliderSection[sliderSection.length - 1];
+    slider.style.marginLeft = "0";
     slider.style.transition = "all 0.5s";
 
     setTimeout(function () {
