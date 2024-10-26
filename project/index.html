@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <script src="scripts/scripts.js" defer></script>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -31,6 +37,33 @@
         </nav>
     </header>
     <main>
+        <section class="container-slider">
+            <div class="slider" id="slider">
+                <div class="slider__section">
+                    <picture>
+                        <source srcset="images/hero1small.webp" media="(max-width: 400px)">
+                        <img class="slider__img" src="images/hero1large.webp" alt="Independiente Hero Image 1"
+                            loading="lazy" width="1600" height="800">
+                    </picture>
+                </div>
+                <div class="slider__section">
+                    <picture>
+                        <source srcset="images/hero2small.webp" media="(max-width: 400px)">
+                        <img class="slider__img" src="images/hero2large.webp" alt="Independiente Hero Image 2"
+                            loading="lazy" width="1600" height="800">
+                    </picture>
+                </div>
+                <div class="slider__section">
+                    <picture>
+                        <source srcset="images/hero3small.webp" media="(max-width: 400px)">
+                        <img class="slider__img" src="images/hero3large.webp" alt="Independiente Hero Image 3"
+                            loading="lazy" width="1600" height="800">
+                    </picture>
+                </div>
+            </div>
+            <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+            <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+        </section>
 
     </main>
     <footer>
