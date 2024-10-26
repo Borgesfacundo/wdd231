@@ -107,7 +107,16 @@ section {
     margin: 0 auto;
     background-color: #282525;
     border-radius: 9px;
+}
 
+.club-legends {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.club-legends h2 {
+    grid-column: 1/4;
 }
 
 footer {

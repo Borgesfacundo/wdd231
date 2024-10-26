@@ -1,0 +1,94 @@
+{
+    "players": [
+        {
+            "name": "Ricardo Bochini",
+            "number": 10,
+            "img": "https://www.elciudadanoweb.com/wp-content/uploads/2024/01/Futbol_Independiente_Bochini_70-a%C3%B1os_2024_1.jpg",
+            "first": "July 20 1972"
+        },
+        {
+            "name": "Sergio Aguero",
+            "number": 16,
+            "img": "https://media.minutouno.com/p/56e816fbc917772dee5d0fe4a7d89b25/adjuntos/150/imagenes/025/478/0025478673/610x0/smart/kun-aguero-nueva-camiseta-de-independientejpg.png",
+            "first": "August 20 2005"
+        },
+        {
+            "name": "Manuel Sedane",
+            "number": 10,
+            "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqx3Ebk9PQ06decc-ALPq8g5Rj8F7AUKGxl4ii_7oS91Q_MgOEzx3ZesiwJ14L4e89OPLO8Dw5BQDj6C5K75Fu6uNth4DBKA0UqwLnpxDXZSLAw0mB4gnvHXzlPF_ZZCo4bkdePshlHX0/s609/Chancha+Seoane+vuela.jpg",
+            "first": "January 15 2005"
+        },
+        {
+            "name": "Antonio Sastre",
+            "number": 7,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYN7mClk-0Oz8FG-EuKjPgJMDkcr3O4xj-bEBrmXUoQl5vXZfC5c4Exkmg2aVxAPu01-I&usqp=CAU",
+            "first": "January 15 2013"
+        },
+        {
+            "name": "Diego Forlan",
+            "number": 10,
+            "img": "https://soydelrojo.com/wp-content/uploads/2022/10/Diego-Forlan-analizo-el-presente-del-Orgullo-Nacional..jpg",
+            "first": "February 28 2006"
+        },
+        {
+            "name": "Ernesto Grillo",
+            "number": 3,
+            "img": "https://pbs.twimg.com/media/EjQJM-YXgAIfukn.jpg",
+            "first": "July 15 2008"
+        },
+        {
+            "name": "Javier Zanetti",
+            "number": 4,
+            "img": "https://soydelrojo.com/wp-content/uploads/2023/05/Javier-Zanetti-en-Independiente.jpg",
+            "first": "March 01 2002"
+        },
+        {
+            "name": "Gabriel Milito",
+            "number": 2,
+            "img": "https://media.lacapital.com.ar/p/6b6ccf00427d5f2db4cda20fac5afc8e/adjuntos/204/imagenes/009/679/0009679669/1200x675/smart/milito1jpg.jpg",
+            "first": "May 15 2007"
+        },
+        {
+            "name": "Nestor Clausen",
+            "number": 6,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThGMQczn-l5jElKvaly6PEkCl2_XMQJlqEHQ&s",
+            "first": "January 15 1998"
+        },
+        {
+            "name": "Ruben Navarro",
+            "number": 2,
+            "img": "https://i.pinimg.com/originals/c6/72/66/c672665b85bb165151e47f0f7e13451a.jpg",
+            "first": "January 30 1989"
+        },
+        {
+            "name": "Miguel Santoro",
+            "number": 1,
+            "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Miguel_Angel_Santoro.jpg",
+            "first": "December 15 1988"
+        },
+        {
+            "name": "Emiliano Martinez",
+            "number": 1,
+            "img": "https://tntsports.com.ar/__export/1701782763020/sites/tntsports/img/2023/12/05/dibu-martinez-independiente.jpg_742406227.jpg",
+            "first": "September 18 2008"
+        },
+        {
+            "name": "Daniel Bertoni",
+            "number": 8,
+            "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidMF2U3iZa8s5SdxG8XUZEY81fUge3wvwrRhY0Z289mwBhCpxCgoDz9HdWMcg2eEBQT6g9CYqBzvq_1Apa60Z_oTyZxUJe2i20qDcMe8TZWqm1EiFFjvVo4dqmZWh4tpJUE9ziMSgmEVE/s1600/Bertoni1.png",
+            "first": "October 16 1987"
+        },
+        {
+            "name": "Claudio Marangoni",
+            "number": 5,
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW552Sr0O1XmkTkjUXx3gPgyewcX4RBRHMCQ&s",
+            "first": "November 27 1995"
+        },
+        {
+            "name": "Jorge Burruchaga",
+            "number": 7,
+            "img": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQbUouXJOTYV1EKRWAxRZBi_jBZ6za-4jZHMMyIV74Z0OcdsKntAD0s0iBqiyxATkN7V2Fakm4SLJDCKWCtqoc1ArskvNZIcdQORIo1QbEcf0bLHCjJK0L5MxJp2CuEJ-7g3snCQeVlKg/s1600/IMG_ORG_1570166477203.jpeg",
+            "first": "September 07 1985"
+        }
+    ]
+}
