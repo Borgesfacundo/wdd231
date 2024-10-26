@@ -112,11 +112,13 @@ section {
 .club-legends {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
-.club-legends h2 {
-    grid-column: 1/4;
+.club-legends .idols-container img {
+    border: 4px solid #fff;
+    border-radius: 9px;
 }
 
 footer {
