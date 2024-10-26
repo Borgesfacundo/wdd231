@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/soccer.js" defer></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -110,6 +111,10 @@
                 <p>G. Milito</p>
             </div>
         </section>
+        <div id="wg-api-football-standings" data-host="v3.football.api-sports.io"
+            data-key="91bdd3b65ef122171d45267ead299152" data-league="39" data-team="" data-season="2022"
+            data-theme="dark" data-show-errors="true" data-show-logos="true" class="wg_loader">
+        </div>
 
     </main>
     <footer>
@@ -129,6 +134,8 @@
             <p>&copy; <span id="currentyear"></span> - C.A.I Soccer Club Site</p>
         </div>
     </footer>
+    <script type="module" src="https://widgets.api-sports.io/2.0.3/widgets.js">
+    </script>
 
 </body>
 
