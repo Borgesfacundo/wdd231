@@ -47,3 +47,7 @@ btnRight.addEventListener("click", function () {
 btnLeft.addEventListener("click", function () {
     Prev();
 });
+
+setInterval(function () {
+    Next();
+}, 5000);
