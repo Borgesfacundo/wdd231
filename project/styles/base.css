@@ -70,7 +70,6 @@ nav ul li a {
     text-align: center;
     color: var(--white);
     border-radius: 6px;
-
 }
 
 .active {
@@ -118,6 +117,13 @@ section {
 
 .club-legends .idols-container img {
     border: 4px solid #fff;
+}
+
+.weather {
+    text-align: center;
+    background-color: #282525;
+    padding: .5rem;
+    margin: 2rem 1rem;
 }
 
 .map {
