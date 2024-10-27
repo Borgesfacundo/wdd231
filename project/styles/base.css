@@ -126,6 +126,13 @@ section {
     margin: 2rem 1rem;
 }
 
+.visitant-info {
+    text-align: center;
+    padding: .5rem;
+    margin: 2rem 1rem;
+    background-color: #282525;
+}
+
 .map {
     text-align: center;
 }
