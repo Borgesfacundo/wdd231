@@ -52,3 +52,13 @@ btnLeft.addEventListener("click", function () {
 setInterval(function () {
     Next();
 }, 5000);
+
+//Address
+const address = "Ricardo Enrique Bochini 751, Avellaneda, Bs. As.";
+document.querySelector(".address").innerHTML = `${address}`;
+
+//current Year
+const date = new Date();
+
+
+document.querySelector("#currentyear").innerHTML = `${date.getFullYear()}`;
