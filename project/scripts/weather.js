@@ -27,7 +27,7 @@ function displayResults(data) {
     document.querySelector(".weather-desc").innerHTML = `${desc}`;
     document.querySelector(".weather-high").innerHTML = `High: ${data.main.temp_max}°`;
     document.querySelector(".weather-low").innerHTML = `Low: ${data.main.temp_min}°`;
-    document.querySelector(".weather-humidity").innerHTML = `Himidity: ${data.main.humidity}%`;
+    document.querySelector(".weather-humidity").innerHTML = `Humidity: ${data.main.humidity}%`;
 }
 
 apiFetch();
