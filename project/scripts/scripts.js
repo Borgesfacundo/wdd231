@@ -65,6 +65,8 @@ document.querySelector("#currentyear").innerHTML = `${date.getFullYear()}`;
 
 //visits with Local Storage
 const visits = document.querySelector(".visits");
+const number = document.querySelector(".visitnumber");
+
 const msToDays = 86400000; //1 day
 const lastVisit = Date.now();
 let numVisits = Number(window.localStorage.getItem("visits"));
@@ -85,5 +87,8 @@ if (numVisits !== 0 && (lastVisit - lastUserVisit) > msToDays)
     }
 
 numVisits++;
+number.innerHTML = `This is your visit N° ${numVisits}`;
+
 localStorage.setItem("visits", numVisits);
 localStorage.setItem("lastVisit", lastVisit);
+
