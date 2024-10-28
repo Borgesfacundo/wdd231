@@ -221,13 +221,13 @@ dialog {
 .player-container {
     min-width: 320px;
     width: 320px;
-    height: auto;
+    height: 450px;
     text-align: center;
 }
 
 dialog img {
     width: 30vh;
-    height: 100%;
+    height: auto;
 }
 
 .player-container img,
@@ -236,7 +236,7 @@ dialog img {
 }
 
 .player-container img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
