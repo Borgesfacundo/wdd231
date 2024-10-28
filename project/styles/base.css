@@ -202,3 +202,21 @@ footer div {
 .slider__btn--right {
     right: 10px;
 }
+
+/* Players Page*/
+
+dialog {
+    padding: 2rem;
+    width: 60%;
+    text-align: center;
+}
+
+dialog img {
+    width: 30vh;
+    height: 100%;
+}
+
+.player-container img,
+dialog img {
+    object-fit: cover;
+}

@@ -4,6 +4,7 @@ let playersList = []; //creating an array
 const displayPlayers = (players) => {
     players.forEach(player => {
         const container = document.createElement("div");
+        container.setAttribute("class", "player-container")
 
         const playerPicture = document.createElement("img");
         playerPicture.setAttribute("src", player.img);
