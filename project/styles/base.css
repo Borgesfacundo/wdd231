@@ -24,6 +24,10 @@ h1 {
     min-width: 250px;
 }
 
+h2 {
+    text-align: center;
+}
+
 header div img {
     margin: 2rem auto;
 }
@@ -204,10 +208,20 @@ footer div {
 }
 
 /* Players Page*/
+.cards {
+    justify-content: center;
+}
 
 dialog {
     padding: 2rem;
     width: 60%;
+    text-align: center;
+}
+
+.player-container {
+    min-width: 320px;
+    width: 320px;
+    height: auto;
     text-align: center;
 }
 
@@ -219,4 +233,41 @@ dialog img {
 .player-container img,
 dialog img {
     object-fit: cover;
+}
+
+.player-container img {
+    width: 250px;
+    height: auto;
+}
+
+.players-main {
+    grid-template-columns: 1fr;
+}
+
+.players-main .cards {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(
+       auto-fit, minmax(320px, 1fr)
+    );
+    gap: .5rem;
+    align-items: center;
+}
+
+.cards div {
+    background-color: #282525;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.open-modal {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+}
+
+.open-modal:hover {
+    color: #a4282a;
 }
