@@ -17,7 +17,9 @@ const displayPlayers = (players) => {
         btnModal.setAttribute("class", "open-modal");
         name.innerHTML = `${player.name}`;
         //display modal
-        btnModal.addEventListener("click", displayModal(player));
+        btnModal.addEventListener("click", () => {
+            displayModal(player);
+        })
 
 
         container.appendChild(playerPicture);
@@ -30,8 +32,11 @@ const displayPlayers = (players) => {
 
 //display modal function
 function displayModal(player) {
-    const playerPicture = document.createElement("img");
     const modalElement = document.querySelector("#player-details");
+
+    modalElement.innerHTML = "";
+
+    const playerPicture = document.createElement("img");
     playerPicture.setAttribute("src", player.img);
     playerPicture.setAttribute("alt", `${player.name}`);
     playerPicture.setAttribute("width", `250`);
@@ -39,14 +44,23 @@ function displayModal(player) {
     const name = document.createElement("h2");
     name.innerHTML = `${player.name}`;
     const number = document.createElement("p");
-    number.innerHTML = `Number of Shirt: ${player.number}`;
+    number.innerHTML = `<b>Number of Shirt:</b> ${player.number}`;
     const debut = document.createElement("p");
-    debut.innerHTML = `First Career Game:${player.first}`
+    debut.innerHTML = `<b>First Career Game:</b> ${player.first}`
+    const btnClose = document.createElement("button");
+    btnClose.innerHTML = `X`;
+    btnClose.id = "closeModal";
 
+    modalElement.appendChild(btnClose)
     modalElement.appendChild(name);
     modalElement.appendChild(playerPicture);
     modalElement.appendChild(number);
     modalElement.appendChild(debut);
+
+    modalElement.showModal();
+    closeModal.addEventListener("click", () => {
+        modalElement.close();
+    })
 }
 
 //call the info
