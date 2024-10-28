@@ -218,6 +218,12 @@ dialog {
     height: 70vh;
     text-align: center;
     align-content: center;
+    border-radius: 16px;
+    box-shadow: 0 0 3rem #000000;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, .7);
 }
 
 .player-container {
