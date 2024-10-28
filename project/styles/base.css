@@ -215,7 +215,9 @@ footer div {
 dialog {
     padding: 2rem;
     width: 60%;
+    height: 60vh;
     text-align: center;
+    align-content: center;
 }
 
 .player-container {
