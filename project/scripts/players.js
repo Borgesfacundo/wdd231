@@ -12,11 +12,41 @@ const displayPlayers = (players) => {
         playerPicture.setAttribute("height", `250`);
 
         const name = document.createElement("p");
+        const btnModal = document.createElement("a");
+        btnModal.textContent = "More info"
+        btnModal.setAttribute("class", "open-modal");
         name.innerHTML = `${player.name}`;
+        //display modal
+        btnModal.addEventListener("click", displayModal(player));
+
+
         container.appendChild(playerPicture);
         container.appendChild(name);
+        container.appendChild(btnModal);
         cardsElement.appendChild(container);
+
     })
+}
+
+//display modal function
+function displayModal(player) {
+    const playerPicture = document.createElement("img");
+    const modalElement = document.querySelector("#player-details");
+    playerPicture.setAttribute("src", player.img);
+    playerPicture.setAttribute("alt", `${player.name}`);
+    playerPicture.setAttribute("width", `250`);
+    playerPicture.setAttribute("height", `250`);
+    const name = document.createElement("h2");
+    name.innerHTML = `${player.name}`;
+    const number = document.createElement("p");
+    number.innerHTML = `Number of Shirt: ${player.number}`;
+    const debut = document.createElement("p");
+    debut.innerHTML = `First Career Game:${player.first}`
+
+    modalElement.appendChild(name);
+    modalElement.appendChild(playerPicture);
+    modalElement.appendChild(number);
+    modalElement.appendChild(debut);
 }
 
 //call the info
