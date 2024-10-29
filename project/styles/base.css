@@ -295,8 +295,8 @@ dialog img {
 
 form {
     max-width: 55rem;
-    margin-right: 0.5;
-    margin-left: 0.5;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 fieldset {

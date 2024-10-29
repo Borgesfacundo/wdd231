@@ -90,11 +90,6 @@
         transition: 1s ease;
     }
 
-    /* players page */
-    .cards h2 {
-        grid-column: -1fr;
-    }
-
     /* Join Us Page */
     .main-join {
         grid-template-columns: 1fr 2fr;
