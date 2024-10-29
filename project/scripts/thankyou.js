@@ -1,10 +1,12 @@
-const currentURL = window.location.href;
+const getUrlData = window.location.href;
 
-const everything = currentURL.split("?");
+
+const everything = getUrlData.split("?");
 
 let formData = everything[1].split("&");
 
 function show(cup) {
+    let result = null;
     formData.forEach((element) => {
         if (element.startsWith(cup)) {
             result = element.split("=")[1].replace("%40", "@")
@@ -13,11 +15,11 @@ function show(cup) {
     return (result)
 };
 
-const encodedTimestamp = `${show("timestamp")}`;
-const decodedTimestamp = decodeURIComponent(encodedTimestamp);
-const date = new Date(decodedTimestamp);
+const timestampData = `${show("timestamp")}`;
+const timestampDecoded = decodeURIComponent(timestampData);
+const submissionDate = new Date(timestampDecoded);
 
-const formattedDate = date.toLocaleString('en-US', {
+const formattedDate = submissionDate.toLocaleString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -28,9 +30,11 @@ const formattedDate = date.toLocaleString('en-US', {
 
 const showInfo = document.querySelector(".userinfo");
 showInfo.innerHTML = `
-<p>Submitted for ${show("name")} ${show("last")}</p>
-<p>Phone: is ${show("telephone")}</p>
-<p>Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
-<p>Business: ${show("business")} </p>
+<p>Submitted for ${show("name")} ${show("last")}.</p>
+<p>Phone: ${show("telephone")}.</p>
+<p>Email: <a href="mailto:${show("email")}">${show("email")}.</a></p>
+<p>You applied to become a <b>${show("membership")}</b> membership.</p>
 <p>Submission Date: ${formattedDate}.</p>
 `;
+
+console.log(timestampDecoded);

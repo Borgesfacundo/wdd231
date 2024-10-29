@@ -40,5 +40,24 @@ function displayMembershipModal(membership, className) {
     });
 }
 
+// Get the element with ID "timestamp"
+var timestampElement = document.getElementById("timestamp");
+
+
+
+// Timestamp
+function setCurrentDateTime() {
+    var now = new Date();
+    var dateTimeString = now.toISOString();
+    document.getElementById("timestamp").value = dateTimeString;
+}
+
+// Call function when page is loaded
+if (timestampElement !== null) {
+    setCurrentDateTime();
+} else {
+    console.log("no Timestamp element");
+}
+
 getMembership()
 

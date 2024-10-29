@@ -14,8 +14,8 @@ function show(cup) {
 };
 
 const encodedTimestamp = `${show("timestamp")}`;
-const decodedTimestamp = decodeURIComponent(encodedTimestamp);
-const date = new Date(decodedTimestamp);
+const decodedTimestamp = decodeURIComponent(timestampData);
+const date = new Date(timestampDecoded);
 
 const formattedDate = date.toLocaleString('en-US', {
     year: 'numeric',
