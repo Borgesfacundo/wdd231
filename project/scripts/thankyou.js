@@ -36,5 +36,3 @@ showInfo.innerHTML = `
 <p>You applied to become a <b>${show("membership")}</b> membership.</p>
 <p>Submission Date: ${formattedDate}.</p>
 `;
-
-console.log(timestampDecoded);
