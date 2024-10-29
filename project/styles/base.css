@@ -121,7 +121,7 @@ section {
 
 .club-legends .idols-container img {
     box-shadow: 0 0 0 5px #ffffff3a,
-    0 15px 50px #000;
+        0 15px 50px #000;
     border-radius: 6px;
 }
 
@@ -223,11 +223,17 @@ dialog {
 }
 
 .player-container {
-    min-width: 320px;
-    width: 320px;
+    min-width: 300px;
+    width: 300px;
     height: 450px;
     text-align: center;
     align-content: center;
+    border-radius: 16px;
+    box-shadow: 0 0 3rem #000000;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, .7);
 }
 
 dialog img {
@@ -252,9 +258,7 @@ dialog img {
 .players-main .cards {
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(
-       auto-fit, minmax(320px, 1fr)
-    );
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: .5rem;
     align-items: center;
 }
@@ -283,15 +287,126 @@ dialog img {
     right: 5px;
 }
 
-    /* thank you page*/
 
-    .userinfo {
-        background-color: #282525;
-        padding: 2rem;
-        border-radius: 6px;
-    }
+/* Join Page */
+.main-join {
+    grid-template-columns: 1fr;
+}
 
-    .userinfo a {
-        color: #fff;
-        text-decoration: none;
-    }
+form {
+    max-width: 55rem;
+    margin-right: 0.5;
+    margin-left: 0.5;
+}
+
+fieldset {
+    margin: 2rem 0;
+    border: 1px solid #a0a4a7;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    background-color: #282525;
+}
+
+legend {
+    padding: 0 .5rem;
+    font-size: 1.4rem;
+}
+
+label {
+    display: block;
+    padding-top: 1rem;
+}
+
+fieldset div {
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="telephone"] {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.75rem;
+    max-width: 400px;
+    width: 100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 6px;
+    padding-top: 0.75rem;
+}
+
+input[type="submit"] {
+    border-radius: 15px;
+    background-color: #000;
+    color: #fff;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 3px 3px 6px #9a8d8d;
+    padding: .8rem;
+}
+
+input[type="submit"]:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+input:required {
+    border-right: 8px solid #dc0004;
+}
+
+input:required:valid {
+    border-right: 8px solid rgb(4, 183, 22);
+}
+
+.membership-lvl {
+    padding: 1rem;
+}
+
+.membership-lvl h2 {
+    padding-bottom: 1.5rem;
+}
+
+.membership-lvl div {
+    background-color: #282525;
+    text-align: center;
+    padding: 2rem 2rem;
+    margin: 1rem 0.5rem;
+    border-radius: 9px;
+    border: 1px solid #000;
+    max-width: 500px;
+    border: 1px solid #a0a4a7;
+
+}
+
+.membership-lvl div a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue--button);
+    padding: .5rem .8rem;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+
+.membership-lvl div a:hover {
+    background-color: #fff;
+    color: #a4282a;
+}
+
+/* thank you page*/
+
+.userinfo {
+    background-color: #282525;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.userinfo a {
+    color: #fff;
+    text-decoration: none;
+}
