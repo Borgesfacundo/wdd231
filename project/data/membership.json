@@ -1,28 +1,22 @@
 {
     "membership": [
         {
-            "class": "np",
-            "title": "NP Membership Level",
-            "description": "This is for non profit organizations and the is no fee. It includes the following benefits: every 6 months you will have an special event focused on your organization, you will have access to 10 trainning sessions per month and 15% discount in special events.",
-            "cost": "Free!"
-        },
-        {
-            "class": "bronze",
-            "title": "Bronze Membership Level",
-            "description": "This is the basic plan. It includes a 15% discount in every event, an special section on the home page to your spotlights and 12 trainnings sessions per month",
-            "cost": "$100"
-        },
-        {
-            "class": "silver",
-            "title": "Silver Membership Level",
-            "description": "Silver memberships will obtain a 25% discount in every event, 2 sections to special section to advertise your page and access to more than 15 trainning session.",
-            "cost": "$200"
+            "class": "basic",
+            "title": "Basic Membership",
+            "description": "This is the basic plan a to become a member of C.A.I Soccer Club. You will be able to visit the stadium 1 time each month. And you will be allowed to buy tockets for every game.",
+            "cost": "$30"
         },
         {
             "class": "gold",
-            "title": "Gold Membership Level",
-            "description": "Gold Membership offers a total of 35% discount in every event, 4 special sections to advertise your business or spotlight whatever you want and unlimited access to our trainning sessions.",
-            "cost": "$250"
+            "title": "Gold Membership",
+            "description": "Purchasing the gold membership you will be able to participate in our monthly giveaway with many prizes. You will obatain the same benefits as a basic membership plus the addition of a free ticket each month to a game AT 'El Libertadores de America'and the option to buy gold tickets for any game.",
+            "cost": "$50"
+        },
+        {
+            "class": "vip",
+            "title": "VIP Membership",
+            "description": "VIP members will obtain access to exclusively merchandising, the option to buy VIP tickets with the best benefits and discounts and a weekly chance to meet and greet with one soccer club star.",
+            "cost": "$100"
         }
     ]
 }
