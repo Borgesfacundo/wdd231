@@ -3,20 +3,20 @@ const openModalBasic = document.querySelector(".basic");
 const openModalGold = document.querySelector(".gold");
 const openModalVip = document.querySelector(".vip");
 
-const linkURL = "https://borgesfacundo.github.io/wdd231/chamber/data/membershiplevel.json";
+const linkURL = "https://borgesfacundo.github.io/wdd231/project/data/membership.json";
 
 async function getMembership() {
     const response = await fetch(linkURL);
     const data = await response.json();
 
     openModalBasic.addEventListener("click", () => {
-        displayMembershipModal(data, "np");
+        displayMembershipModal(data, "basic");
     });
     openModalGold.addEventListener("click", () => {
-        displayMembershipModal(data, "bronze");
+        displayMembershipModal(data, "gold");
     });
     openModalVip.addEventListener("click", () => {
-        displayMembershipModal(data, "silver");
+        displayMembershipModal(data, "vip");
     });;
 };
 
