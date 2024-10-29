@@ -1,4 +1,4 @@
-const modal = document.querySelector("#membership-details");
+const playerDetailsModal = document.querySelector("#membership-details");
 const openModalBasic = document.querySelector(".basic");
 const openModalGold = document.querySelector(".gold");
 const openModalVip = document.querySelector(".vip");
@@ -21,19 +21,20 @@ async function getMembership() {
 };
 
 function displayMembershipModal(membership, className) {
-    membership.memberships.forEach((lvl) => {
+    membership.membership.forEach((lvl) => {
+        console.log(lvl);
         if (lvl.class === className) {
-            modal.innerHTML = "";
-            modal.innerHTML = `
+            playerDetailsModal.innerHTML = "";
+            playerDetailsModal.innerHTML = `
             <button id="closeModal">❌</button>
             <h2>${lvl.title}</h2>
             <p>${lvl.description}</p>
             <p>Cost: ${lvl.cost}</p>
             `;
-            modal.showModal();
+            playerDetailsModal.showModal();
             const closeModal = document.querySelector("#closeModal");
             closeModal.addEventListener("click", () => {
-                modal.close();
+                playerDetailsModal.close();
             });
         }
     });
