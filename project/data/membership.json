@@ -3,13 +3,13 @@
         {
             "class": "basic",
             "title": "Basic Membership",
-            "description": "This is the basic plan a to become a member of C.A.I Soccer Club. You will be able to visit the stadium 1 time each month. And you will be allowed to buy tockets for every game.",
+            "description": "This is the basic plan to become a member of C.A.I Soccer Club. You will be able to visit the stadium 1 time each month. And you will be allowed to buy tickets for everygame.",
             "cost": "$30"
         },
         {
             "class": "gold",
             "title": "Gold Membership",
-            "description": "Purchasing the gold membership you will be able to participate in our monthly giveaway with many prizes. You will obatain the same benefits as a basic membership plus the addition of a free ticket each month to a game AT 'El Libertadores de America'and the option to buy gold tickets for any game.",
+            "description": "Purchasing the gold membership you will be able to participate in our monthly giveaway with many prizes. You will obatain the same benefits as a basic membership plus the addition of a free ticket each month to a game at 'El Libertadores de America'and the option to buy gold tickets for anygame.",
             "cost": "$50"
         },
         {
